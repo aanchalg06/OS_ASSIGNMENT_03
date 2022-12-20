@@ -89,7 +89,7 @@ int main(void)
         // printf("%s \n",str);
 
         send(sock, str, strlen(str), 0);
-        printf("P1: ID %d get Successfull\n",x-1);
+        printf("P1rocess successfull P1:",x-1);
             printf("\n");
         
   }
