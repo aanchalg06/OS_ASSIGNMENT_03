@@ -12,7 +12,7 @@ module_param(P,charp,0660);
 static int __init proc_init(void)
 {
 	printk("\n");
-	printk("_________---Module added successfull---________\n");
+	printk("Module added successfull\n");
 	struct task_struct *task;
 	const struct cred *cred;
 	for_each_process(task){
@@ -27,9 +27,11 @@ static int __init proc_init(void)
 ///Unloading module form kernel
 static void __exit proc_cleanup(void)
 {
-	printk(" MODULE DELETED SUCCESSFULLY\n");
+	printk(" MODULE DELETED \n");
 }
 
 module_init(proc_init);
 module_exit(proc_cleanup);
 MODULE_LICENSE("GPL");
+
+//@reference tut-5 OS
