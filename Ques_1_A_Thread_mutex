@@ -59,6 +59,8 @@ int initialization(int i){
     return ans;
 }
 
+//@ https://stackoverflow.com/questions/57811500/passing-argument-as-int-to-thread-warning-cast-to-pointer-from-integer-differ
+
 // int data = 999; // the integer  
 // int* pointer =  &data; // the pointer
 
@@ -78,6 +80,7 @@ int join(int i){
 }
 
 void eating(int n){
+  //@ https://www.geeksforgeeks.org/mutex-lock-for-linux-thread-synchronization/
 
   // left fork
   pthread_mutex_lock(&fork_eat[n]);

@@ -10,6 +10,10 @@ void pick_fork(int nn){
     sem_wait(&forks[nn]);
     sem_wait(&forks[(nn+1)%5]); 
 }
+//lecture- process synchronization slide 11 in sec-B
+//lecture- process synchronizatio slide 46 in sec-B
+
+
 
 void rest_fork(int nn){
     sem_post(&forks[nn]);
